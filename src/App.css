@@ -1,0 +1,33 @@
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 3em;
+  padding: 0.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.2));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    transition: all 0.3s ease;
+  }
+}
+
+.card {
+  padding: 1.5em;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.read-the-docs {
+  color: var(--muted-foreground);
+}
