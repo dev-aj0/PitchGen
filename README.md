@@ -29,7 +29,7 @@ Just paste your GitHub repo URL, and PitchGen will:
 
 ## 🌐 Live Demo
 
-[🔗 Try it here → pitchgen.netlify.app](https://pitchgen.netlify.app) *(replace with real link once deployed)*
+[🔗 Try it here → pitchgenai.netlify.app](https://pitchgenai.netlify.app)
 
 ---
 
