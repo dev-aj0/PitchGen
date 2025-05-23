@@ -19,14 +19,6 @@ Just paste your GitHub repo URL, and PitchGen will:
 - (Optional) Screenshots or architecture diagrams
 
 ---
-
-## 📸 Example Output
-
-- ✅ [Sample Pitch Script](#)
-- ✅ [Example One-Pager PDF](#)
-
----
-
 ## 🌐 Live Demo
 
 [🔗 Try it here → pitchgenai.netlify.app](https://pitchgenai.netlify.app)
