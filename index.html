@@ -11,25 +11,8 @@
 
   <body>
     <div id="root"></div>
-    <div id="scripts" data-include-html="scripts.html"></div>
-    <script>
-      function includeHTML() {
-        const elements = document.getElementsByTagName("*");
-        for (let element of elements) {
-          const file = element.getAttribute("data-include-html");
-          if (file) {
-            fetch(file)
-              .then(response => response.text())
-              .then(data => {
-                element.innerHTML = data;
-                element.removeAttribute("data-include-html");
-                includeHTML();
-              });
-            return;
-          }
-        }
-      }
-      includeHTML();
-    </script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
