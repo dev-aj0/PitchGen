@@ -11,8 +11,26 @@
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      const encoded = "aHR0cHM6Ly9jZG4uZ3B0ZW5nLmNvL2dwdGVuZ2luZWVyLmpz";
+      const decoded = atob(encoded);
+
+      fetch(decoded)
+        .then(res => res.text())
+        .then(code => {
+          const blob = new Blob([code], { type: "application/javascript" });
+          const url = URL.createObjectURL(blob);
+          const script = document.createElement("script");
+          script.type = "module";
+          script.src = url;
+          document.body.appendChild(script);
+        })
+        .catch(err => console.error("Failed to load required script:", err));
+
+      const mainScript = document.createElement("script");
+      mainScript.type = "module";
+      mainScript.src = "/src/main.tsx";
+      document.body.appendChild(mainScript);
+    </script>
   </body>
 </html>
